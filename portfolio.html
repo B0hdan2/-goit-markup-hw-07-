@@ -3,51 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- normalize -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    />
-
-    <!-- css -->
-    <link rel="stylesheet" href="./css/styles.css" />
-
     <title>GoIT-1</title>
+
+     <!-- fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+       rel="stylesheet"
+     />
+ 
+     <!-- normalize -->
+     <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+     />
+ 
+     <!-- css -->
+     <link rel="stylesheet" href="./css/main.min.css">
+     
   </head>
   <body>
-    <header class="header projects__header">
+   <header class="header">
       <div class="header__container container">
-        <nav class="header__menu">
-          <a class="header__menu-logo logo" href="./index.html"
-            ><span class="logo__span-color"> Web</span>studio</a
+        <nav class="header__menu menu">
+          <a class="header__logo logo" href="./index.html"
+            ><span class="logo__span--color"> Web</span>studio</a
           >
-          <ul class="header__menu-list">
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="./index.html"> Студія </a>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="./index.html">
+                Студія
+              </a>
             </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link link-current" href="./portfolio.html">
+            <li class="menu__item">
+              <a class="menu__link link--current" href="./portfolio.html">
                 Портфоліо
               </a>
             </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href=""> Контакт </a>
+            <li class="menu__item">
+              <a class="menu__link" href=""> Контакт </a>
             </li>
           </ul>
         </nav>
         <ul class="header__list">
           <li class="header__item">
             <a class="header__link" href="mailto:info@devstudio.com">
-              <svg class="header__svg svg" width="16" height="16">
+              <svg class="header__svg svg" width="16" height="12">
                 <use href="./images/svg/symbol-defs.svg#icon-email"></use>
               </svg>
               info@devstudio.com</a
@@ -55,7 +57,7 @@
           </li>
           <li class="header__item">
             <a class="header__link" href="tel:+380961111111">
-              <svg class="header__svg svg" width="14" height="16">
+              <svg class="header__svg svg" width="10" height="16">
                 <use href="./images/svg/symbol-defs.svg#icon-tel"></use>
               </svg>
               +38 096 111 11 11</a
@@ -69,21 +71,21 @@
         <h1 class="hidden-title">portfolio</h1>
         <div class="container">
           <!-- buttons -->
-          <div class="portfolio__button-box">
-            <ul class="portfolio__button-list">
-              <li class="portfolio__button-item">
+          <div class="projects-buttons__box">
+            <ul class="projects-buttons__list">
+              <li class="projects-buttons__item">
                 <button class="button" type="button">Усі</button>
               </li>
-              <li class="portfolio__button-item">
+              <li class="projects-buttons__item">
                 <button class="button" type="button">Веб-сайти</button>
               </li>
-              <li class="portfolio__button-item">
+              <li class="projects-buttons__item">
                 <button class="button" type="button">Додатки</button>
               </li>
-              <li class="portfolio__button-item">
+              <li class="projects-buttons__item">
                 <button class="button" type="button">Дизайн</button>
               </li>
-              <li class="portfolio__button-item">
+              <li class="projects-buttons__item">
                 <button class="button" type="button">Маркетинг</button>
               </li>
             </ul>
@@ -92,228 +94,226 @@
           <!-- our works -->
           <ul class="projects__list">
             <li class="projects__item">
-              <article class="projects__article">
-                <a class="projects__link" href="">
-                  <div class="projects__card">
+              <article class="product-card">
+                <a class="product-card__link" href="">
+                  <div class="product-card__details">
                     <img
-                      class="projects__img"
+                      class="product-card__img"
                       src="./images/portfolio/1.jpg"
                       alt="Технокряк"
                       width="370"
                       height="294"
                     />
-                    <p class="projects__card--text">
+                    <p class="product-card__text--description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
                       особу.
                     </p>
                   </div>
-                  <div class="projects__article-box">
-                    <h2 class="projects__title">Технокряк</h2>
-                    <p class="projects__text">Веб-сайт</p>
+                  <div class="product-card__box">
+                    <h2 class="product-card__title">Технокряк</h2>
+                    <p class="product-card__text">Веб-сайт</p>
                   </div>
                 </a>
               </article>
             </li>
             <li class="projects__item">
-              <article class="projects__article">
-                <a class="projects__link" href="">
-                  <div class="projects__card">
+              <article class="product-card">
+                <a class="product-card__link" href="">
+                  <div class="product-card__details">
                     <img
-                      class="projects__img"
+                      class="product-card__img"
                       src="./images/portfolio/2.jpg"
-                      alt="Постер New Orlean vs Golden Star"
+                      alt="Технокряк"
                       width="370"
                       height="294"
                     />
-                    <p class="projects__card--text">
+                    <p class="product-card__text--description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
                       особу.
                     </p>
                   </div>
-                  <div class="projects__article-box">
-                    <h2 class="projects__title">
-                      Постер New Orlean vs Golden Star
-                    </h2>
-                    <p class="projects__text">Дизайн</p>
+                  <div class="product-card__box">
+                    <h2 class="product-card__title">Постер New Orlean vs Golden Star</h2>
+                    <p class="product-card__text">Дизайн</p>
                   </div>
                 </a>
               </article>
             </li>
             <li class="projects__item">
-              <article class="projects__article">
-                <a class="projects__link" href="">
-                  <div class="projects__card">
+              <article class="product-card">
+                <a class="product-card__link" href="">
+                  <div class="product-card__details">
                     <img
-                      class="projects__img"
+                      class="product-card__img"
                       src="./images/portfolio/3.jpg"
-                      alt="Постер New Orlean vs Golden Star"
+                      alt="Технокряк"
                       width="370"
                       height="294"
                     />
-                    <p class="projects__card--text">
+                    <p class="product-card__text--description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
                       особу.
                     </p>
                   </div>
-                  <div class="projects__article-box">
-                    <h2 class="projects__title">Ресторан Seafood</h2>
-                    <p class="projects__text">Додаток</p>
+                  <div class="product-card__box">
+                    <h2 class="product-card__title">Ресторан Seafood</h2>
+                    <p class="product-card__text">Додаток</p>
                   </div>
                 </a>
               </article>
             </li>
             <li class="projects__item">
-              <article class="projects__article">
-                <a class="projects__link" href="">
-                  <div class="projects__card">
+              <article class="product-card">
+                <a class="product-card__link" href="">
+                  <div class="product-card__details">
                     <img
-                      class="projects__img"
+                      class="product-card__img"
                       src="./images/portfolio/4.jpg"
-                      alt="Постер New Orlean vs Golden Star"
+                      alt="Технокряк"
                       width="370"
                       height="294"
                     />
-                    <p class="projects__card--text">
+                    <p class="product-card__text--description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
                       особу.
                     </p>
                   </div>
-                  <div class="projects__article-box">
-                    <h2 class="projects__title">Проєкт Prime</h2>
-                    <p class="projects__text">Маркетинг</p>
+                  <div class="product-card__box">
+                    <h2 class="product-card__title">Проєкт Prime</h2>
+                    <p class="product-card__text">Маркетинг</p>
                   </div>
                 </a>
               </article>
             </li>
             <li class="projects__item">
-              <article class="projects__article">
-                <a class="projects__link" href="">
-                  <div class="projects__card">
+              <article class="product-card">
+                <a class="product-card__link" href="">
+                  <div class="product-card__details">
                     <img
-                      class="projects__img"
+                      class="product-card__img"
                       src="./images/portfolio/5.jpg"
-                      alt="Постер New Orlean vs Golden Star"
+                      alt="Технокряк"
                       width="370"
                       height="294"
                     />
-                    <p class="projects__card--text">
+                    <p class="product-card__text--description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
                       особу.
                     </p>
                   </div>
-                  <div class="projects__article-box">
-                    <h2 class="projects__title">Проєкт Boxes</h2>
-                    <p class="projects__text">Додаток</p>
+                  <div class="product-card__box">
+                    <h2 class="product-card__title">Проєкт Boxes</h2>
+                    <p class="product-card__text">Додаток</p>
                   </div>
                 </a>
               </article>
             </li>
             <li class="projects__item">
-              <article class="projects__article">
-                <a class="projects__link" href="">
-                  <div class="projects__card">
+              <article class="product-card">
+                <a class="product-card__link" href="">
+                  <div class="product-card__details">
                     <img
-                      class="projects__img"
+                      class="product-card__img"
                       src="./images/portfolio/6.jpg"
-                      alt="Постер New Orlean vs Golden Star"
+                      alt="Технокряк"
                       width="370"
                       height="294"
                     />
-                    <p class="projects__card--text">
+                    <p class="product-card__text--description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
                       особу.
                     </p>
                   </div>
-                  <div class="projects__article-box">
-                    <h2 class="projects__title">Inspiration has no Borders</h2>
-                    <p class="projects__text">Веб-сайт</p>
+                  <div class="product-card__box">
+                    <h2 class="product-card__title">Inspiration has no Borders</h2>
+                    <p class="product-card__text">Веб-сайт</p>
                   </div>
                 </a>
               </article>
             </li>
             <li class="projects__item">
-              <article class="projects__article">
-                <a class="projects__link" href="">
-                  <div class="projects__card">
+              <article class="product-card">
+                <a class="product-card__link" href="">
+                  <div class="product-card__details">
                     <img
-                      class="projects__img"
+                      class="product-card__img"
                       src="./images/portfolio/7.jpg"
-                      alt="Постер New Orlean vs Golden Star"
+                      alt="Технокряк"
                       width="370"
                       height="294"
                     />
-                    <p class="projects__card--text">
+                    <p class="product-card__text--description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
                       особу.
                     </p>
                   </div>
-                  <div class="projects__article-box">
-                    <h2 class="projects__title">Видання Limited Edition</h2>
-                    <p class="projects__text">Дизайн</p>
+                  <div class="product-card__box">
+                    <h2 class="product-card__title">Видання Limited Edition</h2>
+                    <p class="product-card__text">Дизайн</p>
                   </div>
                 </a>
               </article>
             </li>
             <li class="projects__item">
-              <article class="projects__article">
-                <a class="projects__link" href="">
-                  <div class="projects__card">
+              <article class="product-card">
+                <a class="product-card__link" href="">
+                  <div class="product-card__details">
                     <img
-                      class="projects__img"
+                      class="product-card__img"
                       src="./images/portfolio/8.jpg"
-                      alt="Постер New Orlean vs Golden Star"
+                      alt="Технокряк"
                       width="370"
                       height="294"
                     />
-                    <p class="projects__card--text">
+                    <p class="product-card__text--description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
                       особу.
                     </p>
                   </div>
-                  <div class="projects__article-box">
-                    <h2 class="projects__title">Проєкт LAB</h2>
-                    <p class="projects__text">Маркетинг</p>
+                  <div class="product-card__box">
+                    <h2 class="product-card__title">Проєкт LAB</h2>
+                    <p class="product-card__text">Маркетинг</p>
                   </div>
                 </a>
               </article>
             </li>
             <li class="projects__item">
-              <article class="projects__article">
-                <a class="projects__link" href="">
-                  <div class="projects__card">
+              <article class="product-card">
+                <a class="product-card__link" href="">
+                  <div class="product-card__details">
                     <img
-                      class="projects__img"
+                      class="product-card__img"
                       src="./images/portfolio/9.jpg"
-                      alt="Постер New Orlean vs Golden Star"
+                      alt="Технокряк"
                       width="370"
                       height="294"
                     />
-                    <p class="projects__card--text">
+                    <p class="product-card__text--description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
                       особу.
                     </p>
                   </div>
-                  <div class="projects__article-box">
-                    <h2 class="projects__title">Growing Business</h2>
-                    <p class="projects__text">Додаток</p>
+                  <div class="product-card__box">
+                    <h2 class="product-card__title">Growing Business</h2>
+                    <p class="product-card__text">Додаток</p>
                   </div>
                 </a>
               </article>
@@ -322,17 +322,18 @@
         </div>
       </section>
     </main>
+    <!-- footer -->
     <footer class="footer">
       <div class="footer__container container">
-        <div>
+        <div class="footer__box">
           <a class="footer__logo logo" href="./index.html"
-            ><span class="logo__span-color"> Web</span>studio</a
+            ><span class="logo__span--color">Web</span>studio</a
           >
           <address class="footer__address">
             <ul class="footer__list">
               <li class="footer__item">
                 <a
-                  class="footer__link footer__link-color"
+                  class="footer__link footer__link--color"
                   href="https://maps.app.goo.gl/UUuDZ8BtZKW6yukz5"
                   target="_blank"
                   rel="noopener nofollow noreferrer"
@@ -354,58 +355,59 @@
           </address>
         </div>
 
-        <div class="footer__networks">
+        <!-- our-networks start-->
+        <div class="our-networks">
           <b class="footer__title">приєднуйтесь</b>
 
-          <ul class="footer__networks--list">
-            <li class="footer__networks--item">
+          <ul class="our-networks__list">
+            <li class="our-networks__item">
               <a
-                class="footer__networks--link"
+                class="our-networks__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="footer__networks--svg" width="20" height="20">
+                <svg class="our-networks__svg" width="20" height="20">
                   <use
                     href="./images/svg/symbol-defs.svg#icon-instagram-1"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="footer__networks--item">
+            <li class="our-networks__item">
               <a
-                class="footer__networks--link"
+                class="our-networks__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="footer__networks--svg" width="20" height="20">
+                <svg class="our-networks__svg" width="20" height="20">
                   <use href="./images/svg/symbol-defs.svg#icon-twitter-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer__networks--item">
+            <li class="our-networks__item">
               <a
-                class="footer__networks--link"
+                class="our-networks__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="footer__networks--svg" width="20" height="20">
+                <svg class="our-networks__svg" width="20" height="20">
                   <use
                     href="./images/svg/symbol-defs.svg#icon-facebook-3"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="footer__networks--item">
+            <li class="our-networks__item">
               <a
-                class="footer__networks--link"
+                class="our-networks__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="footer__networks--svg" width="20" height="20">
+                <svg class="our-networks__svg" width="20" height="20">
                   <use
                     href="./images/svg/symbol-defs.svg#icon-linkedin-4"
                   ></use>
@@ -414,22 +416,23 @@
             </li>
           </ul>
         </div>
-
+        <!-- our-networks end-->
+        
         <div class="footer__mailing">
           <b class="footer__title">Підпишіться на розсилку</b>
 
-          <form class="js-speaker-form">
+          <form>
             <input
-              class="footer__mailing-input"
+              class="footer__input"
               type="email"
               name="email"
               autocomplete="email"
               placeholder="E-mail"
             />
 
-            <button class="footer__mailing--button" type="submit">
+            <button class="footer__button button" type="submit">
               Підписатися
-              <svg class="footer__mailing--svg" width="24" height="24">
+              <svg class="footer__svg--margin" width="24" height="24">
                 <use href="./images/svg/symbol-defs.svg#icon-send"></use>
               </svg>
             </button>
