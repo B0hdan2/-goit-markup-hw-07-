@@ -1,22 +1,15 @@
+.features{
+    @extend %section;
+}
+
 .features__list {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .features__item {
-    width: calc((100% - 90px)/ 4);
-    flex-basis: 270px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-
-    &:nth-child(4n) {
-        margin-right: 0;
-    }
-
-    &:nth-last-child(-n + 4) {
-        margin-bottom: 0;
-    }
-    
+@include grid(100%, 90px, 4);
 }
 
 
@@ -49,7 +42,6 @@
     color: var(--brandColor);
 
 
-    font-style: normal;
-    line-height: calc(24 / 14);
+    line-height: calc(24px / 14px);
     letter-spacing: 0.42px;
 }

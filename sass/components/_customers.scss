@@ -1,10 +1,13 @@
-.customers__list {
-    display: flex;
-    flex-wrap: wrap;
+.customers{
+    @extend %section;
 }
 
-.customers__item:not(:last-child) {
-    margin-right: 30px;
+.customers__list {
+@extend %container;
+}
+
+.customers__item {
+    @include grid(100%, 150px, 6)
 }
 
 

@@ -65,11 +65,7 @@
 
 
 .product-card__title {
-    color: var(--titleColor);
-    font-size: 18px;
-    font-weight: 700;
-    line-height: calc(36 / 18);
-    letter-spacing: 1.08px;
+    @include fonts($fSize: 18px, $lHeight: 36px, $lSpacing:0.06em, $color: var(--titleColor))
 }
 
 .product-card__text {

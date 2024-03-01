@@ -1,27 +1,20 @@
 .team {
+    @extend %section;
+
     background: var(--backgroundColor);
 }
 
 .team__list {
-    display: flex;
-    flex-wrap: wrap;
+    @extend %container;
 }
 
 .team__item {
-    width: calc((100% - 90px)/ 4);
-    margin-right: 30px;
-    margin-bottom: 30px;
+
+    @include grid(100%, 90px, 4);
 
     border-radius: 0px 0px 4px 4px;
     background: var(--whiteColor);
 
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
-    &:nth-child(4n) {
-        margin-right: 0;
-    }
-    
-    &:nth-last-child(-n + 4) {
-        margin-bottom: 0;
-    }
 }
